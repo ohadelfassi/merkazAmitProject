@@ -1,0 +1,23 @@
+<html lang="en">
+<body>
+    <div class="person content">
+        <% if (person.length > 0) { %>
+            <% person.forEach(person => { %>
+                <h3>Name: <%= person.name %> _Surname: <%= person.surname %></h3>
+            <% }) %>
+        <% } else { %>
+            <p> trilili tralala </p>
+        <% } %>
+    </div>
+    <div class="create person">
+        <form action= "/all" method="POST">
+        <label for="name">enter name: </label>
+        <input type="text" id="name" name="name" required>
+        <label for="surname">enter surname: </label>
+        <input type="text" id="name" name="surname" required>
+        <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+    
